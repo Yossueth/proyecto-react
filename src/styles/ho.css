@@ -1,0 +1,89 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+
+  background: #000b03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #078e3b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #078e3b;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #078e3b;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.header2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: #001408;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #078e3b 0.5px solid;
+}
+
+.navbar2 a {
+  position: relative;
+  font-size: 18px;
+  color: #078e3b;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 150px;
+}
+
+.navbar2 a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #078e3b;
+}
+
+.navbar2 a:hover::before {
+  width: 100%;
+}
+
+#btn {
+  background: #078e3b;
+}
+
+#search {
+  margin-right: 180px;
+}
