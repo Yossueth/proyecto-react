@@ -38,8 +38,9 @@ const ForLogin = () => {
           onClick={() => signin(user, password, email)}
           id="btnRegister"
           type="submit"
-          value="Register"
+          value="Iniciar Sesion"
         />
+        <p>No tienes una cuenta? <a href="/signin">Registro</a></p>
       </form>
     </div>
   );

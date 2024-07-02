@@ -17,22 +17,51 @@ function forHome() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+            <Nav.Link href="/home">Link</Nav.Link>
+            <NavDropdown title="Marcas" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Nike</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Adidas</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">Supreme</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action6">Lois Vuitton</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">Supreme</NavDropdown.Item>
+                <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">OFF-WHITE </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            <NavDropdown title="Hoodies" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Nike</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action4">OFF-WHITE</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">Supreme</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action6">Lois Vuitton</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="T-shirts" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Nike</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action4">OFF-WHITE</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">Supreme</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action6">Lois Vuitton</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Funglasses" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Gucci</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action4">OFF-WHITE</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">Supreme</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action6">Lois Vuitton</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
+
           <Form className="d-flex">
             <Form.Control
               type="search"

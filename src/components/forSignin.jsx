@@ -19,6 +19,7 @@ const forSignin = () => {
       email: email,
     };
     postData(userData);
+    console.log(userData);
   }
   return (
     <div className="container">
@@ -61,6 +62,7 @@ const forSignin = () => {
           type="submit"
           value="Register"
         />
+        <p>Ya tienes una cuenta? <a href="/login">Login</a></p>
       </form>
     </div>
   );
