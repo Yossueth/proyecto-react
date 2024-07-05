@@ -1,25 +1,51 @@
-// import { Postprodu } from "../service/products/pro-post";
-import { productsGET } from "../service/products/pro-get";
 import { useState } from "react";
+import { Postprodu } from "../service/products/pro-post";
 
-const Crud = () => {
-  const [productos, setProductos] = useState([]);
-//   const [nombre, setNombre] = useState("");
-//   const [imagen, setImagen] = useState("");
-//   const [descripcion, setDescripcion] = useState("");
+const Crud = ({ productos, setProductos }) => {
+  const [nombre, setNombre] = useState();
+  const [imagen, setImagen] = useState();
+  const [descripcion, setDescripcion] = useState();
+  const [precio, setPrecio] = useState();
 
-  const traerDatos = async () => {
-    const data = await productsGET();
-    setTimeout(() => {
-        setProductos(data);
-        console.log(productos);
-    }, 10);
-  };
+  function meterDatos() {
+    let nuevoProducto = {
+      nombre: nombre,
+      imagen: imagen,
+      descripcion: descripcion,
+      precio: precio,
+    };
+
+    Postprodu(nuevoProducto);
+    setProductos([...productos, nuevoProducto]);
+  }
 
   return (
-    <>
-      <button onClick={traerDatos}>kkkk</button>
-    </>
+    <div>
+      <input
+        type="text"
+        onChange={(e) => setNombre(e.target.value)}
+        placeholder="nombre"
+      />
+      <input
+        type="text"
+        onChange={(e) => setDescripcion(e.target.value)}
+        placeholder="descripcion"
+      />
+      <input
+        type="text"
+        onChange={(e) => setImagen(e.target.value)}
+        placeholder="imagen"
+      />
+      <input
+        type="text"
+        onChange={(e) => setPrecio(e.target.value)}
+        placeholder="precio"
+      />
+      <button id="btnEnviar" onClick={meterDatos}>
+        Enviar
+      </button>
+      <style>{"body { background: #151515; }"}</style>
+    </div>
   );
 };
 

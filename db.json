@@ -2,6 +2,23 @@
   "users": [
     {
       "id": "97c3"
+    },
+    {
+      "id": "b905"
+    },
+    {
+      "id": "4004",
+      "user": "ghj"
+    },
+    {
+      "id": "13e5",
+      "user": "ghj",
+      "email": "m@g"
+    },
+    {
+      "id": "e599",
+      "user": "ghj",
+      "email": "m@g"
     }
   ],
   "products": [
@@ -60,6 +77,10 @@
       "imagen": "https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-Green-Glow/Images/Air-Jordan-1-Retro-High-OG-Green-Glow/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1711135511&h=384&q=60",
       "descripcion": "a",
       "precio": "87"
+    },
+    {
+      "id": "64ec",
+      "nombre": "hola"
     }
   ]
 }
