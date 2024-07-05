@@ -1,5 +1,7 @@
-body {
-  background-color: #3c968a;
+.body2 {
+  
+  width: 100%;
+  height: 591px;
 }
 
 * {
@@ -8,17 +10,17 @@ body {
   user-select: none;
 }
 
-.container {
+.container2 {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 591px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 1em;
 }
 
-.container h2 {
+.container2 h2 {
   text-align: center;
   width: 100%;
   margin-bottom: 1em;
@@ -27,23 +29,24 @@ body {
   text-shadow: 2px 2px 2px black;
 }
 
-.container form {
-  padding: 1.5em;
-  display: flex;
+.container2 form {
+  padding: 0.8em;
+  
   flex-wrap: wrap;
   max-width: 500px;
   border-radius: 20px;
   border: 2px solid rgba(0, 0, 0, 0.048);
   background-color: #5baea3;
+
 }
 
-.container form label {
+.container2 form label {
   width: 100%;
   padding: 0.2em;
   margin-bottom: 0.5em;
 }
 
-.container form input {
+.container2 form input {
   width: 100%;
   margin-bottom: 1em;
   padding: 0.8em;
@@ -52,7 +55,7 @@ body {
   outline-color: #40716b;
 }
 
-.container form input[type="submit"] {
+.container2 form input[type="submit"] {
   margin-top: 1.5em;
   background-color: #24564f;
   color: #ffffff;

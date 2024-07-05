@@ -1,5 +1,7 @@
-body{
+.body{
   background-color: #3bac9d;
+  width: 100%;
+  height: 600px;
 }
 
 * {

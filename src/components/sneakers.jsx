@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { productsGET } from "../service/products/pro-get";
 import { deleteprodu } from "../service/products/pro-delete";
 import "../styles/productos.css";
-import Crud from "./crud";
-const Productos = () => {
-  const [productos, setProductos] = useState([])
+const Productos = ({ productos, setProductos }) => {
   const traerDatos = async () => {
     const data = await productsGET();
     setProductos(data); // Actualizar el estado con los datos obtenidos
@@ -18,7 +16,6 @@ const Productos = () => {
   };
   return (
     <>
-      <Crud productos = {productos} setProductos = {setProductos}/>
       <div id="papaDeProductos">
         {productos.map((producto, index) => (
           <div key={index} id="producto">
@@ -33,4 +30,4 @@ const Productos = () => {
     </>
   );
 };
-export default Productos;
+export default Productos;x

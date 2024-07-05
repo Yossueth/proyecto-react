@@ -1,4 +1,4 @@
-const forhomee = () => {
+const Forhomee = () => {
   return (
     <div className="nav">
       <header className="header">
@@ -17,7 +17,7 @@ const forhomee = () => {
       <hr />
       <header className="header2">
         <nav className="navbar2">
-          <a href="#sor">Sneakers </a>
+          <a href="/sneaker">Sneakers </a>
           <a href="#pro">Hoodies</a>
           <a href="#hab">T-Shirts</a>
           <a href="#con">Sunglasses</a>
@@ -28,4 +28,4 @@ const forhomee = () => {
   );
 };
 
-export default forhomee;
+export default Forhomee;
