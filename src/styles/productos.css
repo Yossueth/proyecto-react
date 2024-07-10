@@ -1,8 +1,8 @@
 #papaDeProductos {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(6, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 #producto {
@@ -50,5 +50,4 @@
   font-weight: bold;
   color: rgba(0, 0, 0, 0.82);
   color: white;
-  
 }

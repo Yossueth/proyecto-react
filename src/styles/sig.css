@@ -4,12 +4,6 @@
   height: 591px;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-  user-select: none;
-}
-
 .container2 {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +30,7 @@
   max-width: 500px;
   border-radius: 20px;
   border: 2px solid rgba(0, 0, 0, 0.048);
-  background-color: #5baea3;
+  background-color: #01732b;
 
 }
 

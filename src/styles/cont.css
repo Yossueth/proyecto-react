@@ -1,9 +1,6 @@
-body {
-  background-color: #3bac9d;
-}
 .contacto {
   color: #ffffff;
-  background-color: #3bac9d;
+  background: #012c11;
 }
 .contacto .contenido-seccion {
   max-width: 1100px;
@@ -30,20 +27,21 @@ body {
   padding: 18px;
   border: none;
   margin-bottom: 20px;
-  background-color: #befaf1;
+  background: #2fae60;
   font-size: 18px;
 }
 .contacto button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #6cb387;
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
   color: #ffffff;
-  background-color: #24564f;
+  background: #078e3b;
+
   position: relative;
   z-index: 10;
 }
@@ -53,7 +51,7 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #41a396;
+  background-color: #19ac51;
   z-index: -1;
   transition: 1s;
 }
@@ -66,7 +64,7 @@ body {
 .contacto .col .info {
   position: absolute;
   top: 40%;
-  background-color: #28635b;
+  background: #2fae60;
   padding: 20px;
   left: 50%;
   transform: translate(-50%, -50%);

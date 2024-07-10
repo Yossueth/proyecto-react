@@ -41,6 +41,7 @@ const Crud = ({ productos, setProductos }) => {
         onChange={(e) => setPrecio(e.target.value)}
         placeholder="precio"
       />
+
       <button id="btnEnviar" onClick={meterDatos}>
         Enviar
       </button>
