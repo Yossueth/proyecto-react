@@ -1,7 +1,7 @@
 import Crud from "../components/crud";
 import Productos from "../components/productos";
 import { useState } from "react";
-const Cruud = () => {
+const Products = () => {
   const [productos, setProductos] = useState([]);
   return (
     <div>
@@ -11,4 +11,4 @@ const Cruud = () => {
   );
 };
 
-export default Cruud;
+export default Products;

@@ -48,11 +48,12 @@ const ForLogin = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <input id="btnRegister" type="submit" value="Iniciar Sesion" />
-          <p>
+          <p className="cambio">
             No tienes una cuenta? <a href="/signin">Registro</a>
           </p>
         </form>
       </div>
+      <style>{"body { background-color: #012c11; }"}</style>
     </div>
   );
 };

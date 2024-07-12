@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/cont.css"
+import "../styles/cont.css";
 const forContacto = () => {
   return (
     <section id="contacto" className="contacto">
@@ -16,7 +16,7 @@ const forContacto = () => {
               cols="1"
               rows="4"
               placeholder="Mensaje"
-           ></textarea>
+            ></textarea>
             <button>
               Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
               <span className="overlay"></span>
@@ -26,15 +26,15 @@ const forContacto = () => {
             <div className="info">
               <ul>
                 <li>
-                  <i className="fa-solid fa-location-dot"></i>
-                  📍Costa Rica 
+                  <i className="texto"></i>
+                  📍Costa Rica
                 </li>
                 <li>
-                  <i className="fa-solid fa-mobile-screen"></i>
+                  <i className="texto"></i>
                   📞 +506 2384 - 5978
                 </li>
                 <li>
-                  <i className="fa-solid fa-envelope"></i>
+                  <i className="texto"></i>
                   📧 StreeX @gmail.com
                 </li>
               </ul>

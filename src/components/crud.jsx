@@ -6,7 +6,7 @@ const Crud = ({ productos, setProductos }) => {
   const [imagen, setImagen] = useState();
   const [descripcion, setDescripcion] = useState();
   const [precio, setPrecio] = useState();
-
+ 
   function meterDatos() {
     let nuevoProducto = {
       nombre: nombre,
@@ -41,9 +41,11 @@ const Crud = ({ productos, setProductos }) => {
         onChange={(e) => setPrecio(e.target.value)}
         placeholder="precio"
       />
+
       <button id="btnEnviar" onClick={meterDatos}>
         Enviar
       </button>
+
       <style>{"body { background: #151515; }"}</style>
     </div>
   );

@@ -1,15 +1,14 @@
-import Forhomee from "../components/forhomee";
+import Navbar from "../components/navbar";
 import "../styles/ho.css";
-import {} from "../components/prueba";
-import { useState } from "react";
-
-
+import ComFooter from "../components/comFooter";
+import Products from "../components/products";
 const Home = () => {
-  
   return (
     <>
-      <Forhomee/>
-
+      <Navbar />
+      <Products/>
+      <ComFooter />
+      
     </>
   );
 };

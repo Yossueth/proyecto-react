@@ -61,16 +61,15 @@ const Signin = () => {
               type="submit"
               value="Iniciar Sesion"
             />
-            <p>
-              No tienes una cuenta? <a href="/signin">Registro</a>
+            <p className="cambio">
+              No tienes una cuenta? <a href="/login">Registro</a>
             </p>
           </form>
         </div>
       </div>
 
-      <style>{'body { background-color: #001508; }'}</style>
+      <style>{"body { background-color: #012c11; }"}</style>
     </>
-    
   );
 };
 
