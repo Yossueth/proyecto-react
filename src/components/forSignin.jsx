@@ -3,22 +3,25 @@ import "../styles/sig.css";
 import { postUser } from "../service/users/user-post";
 
 const Signin = () => {
+  // Estados locales para almacenar el nombre de usuario, contraseña y email
   const [user, setUser] = useState();
   const [password, setPasword] = useState();
   const [email, setEmail] = useState();
 
+
   const handleSumit = (event) => {
-    event.preventDefault();
-    console.log("Name", user);
-    console.log("Email", password);
+    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+    console.log("Name", user); // Muestra el nombre de usuario en la consola
+    console.log("Email", password); // Muestra el email en la consola
   };
+  //Función para realizar el registro de usuario.
   function signin(user, password, email) {
     let userData = {
       user: user,
       password: password,
       email: email,
     };
-    postUser(userData);
+    postUser(userData); // Llama a la función postUser para enviar los datos del usuario
   }
   return (
     <>
@@ -36,7 +39,7 @@ const Signin = () => {
               placeholder="Enter your user"
               id="user"
               required
-              onChange={(e) => setUser(e.target.value)}
+              onChange={(e) => setUser(e.target.value)} // Actualiza el estado user cuando cambia el campo
             />
 
             <label>Email</label>
@@ -45,7 +48,7 @@ const Signin = () => {
               placeholder="Enter your email"
               id="email"
               required
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)} // Actualiza el estado email cuando cambia el campo
             />
             <label>Password</label>
             <input
@@ -53,10 +56,10 @@ const Signin = () => {
               placeholder="Enter your password"
               id="password"
               required
-              onChange={(e) => setPasword(e.target.value)}
+              onChange={(e) => setPasword(e.target.value)} // Actualiza el estado password cuando cambia el campo
             />
             <input
-              onClick={() => signin(user, password, email)}
+              onClick={() => signin(user, password, email)} // Llama a la función signin al hacer clic en el botón
               id="btnRegister"
               type="submit"
               value="Iniciar Sesion"
