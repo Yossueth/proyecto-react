@@ -28,7 +28,7 @@
   overflow-wrap: break-word;
   font-size: 15px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.82);
+  
   color: white;
 }
 
@@ -38,7 +38,7 @@
   max-width: 90%;
   text-align: end;
   overflow-wrap: break-word;
-  color: rgba(0, 0, 0, 0.82);
+
   color: white;
 }
 
@@ -48,6 +48,6 @@
   overflow-wrap: break-word;
   font-size: 15px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.82);
+
   color: white;
 }

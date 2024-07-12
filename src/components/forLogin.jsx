@@ -53,7 +53,7 @@ const ForLogin = () => {
           </p>
         </form>
       </div>
-      <style>{'body { background-color: #012c11; }'}</style>
+      <style>{"body { background-color: #012c11; }"}</style>
     </div>
   );
 };
