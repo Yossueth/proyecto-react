@@ -6,42 +6,47 @@ import Crud from "./crud";
 import { useParams } from "react-router-dom";
 import { PUT } from "../service/products/pro-put";
 
+// Estados locales para manejar la edición de productos y otros estados necesarios
 const Productos = () => {
   const [nombreEdit, setnombreEdit] = useState("");
   const [precioEdit, setprecioEdit] = useState("");
   const [productoEditado, setproductoEditado] = useState("");
   const [modal, setmodal] = useState(false);
   const [productos, setProductos] = useState([]);
-const [imagen, setimagen] = useState("")
-  const { busqueda } = useParams();
+  const [imagen, setimagen] = useState("");
+  const { busqueda } = useParams(); // Obtiene el parámetro de ruta 'busqueda' utilizando useParams
 
+  //Función asíncrona para obtener los datos de producto
   const traerDatos = async () => {
     let data = await productsGET();
     if (busqueda) {
+      // Filtra los productos si hay un parámetro de búsqueda
       data = data.filter((producto) => producto.nombre.match(busqueda));
     }
-    setProductos(data);
+    setProductos(data); // Actualiza el estado 'productos' con los datos obtenidos
   };
 
+  //Función para preparar la edición de un producto.
   const editar = async (producto) => {
     setproductoEditado(producto.id);
     setnombreEdit(producto.nombre);
     setprecioEdit(producto.precio);
-    setimagen(producto.imagen)
+    setimagen(producto.imagen);
     console.log(productoEditado);
 
-    setmodal(true);
+    setmodal(true); // Muestra el modal de edición
   };
-
+  //Función para realizar la edición de un producto.
   const editarProduct = async () => {
     await PUT(productoEditado, nombreEdit, precioEdit, imagen);
-    await traerDatos()
+    await traerDatos();
   };
-
+  //useEffect se ejecuta al cargar el componente y cada vez que 'productos' cambia
   useEffect(() => {
-    traerDatos();
+    traerDatos(); // Obtiene los datos de productos al cargar el componente
   }, []);
 
+  //Función para manejar la eliminación de un producto.
   const handleDelete = async (id) => {
     await deleteprodu(id);
     await traerDatos();
